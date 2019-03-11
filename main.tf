@@ -6,5 +6,5 @@ resource "datadog_integration_aws" "main" {
     role_name = "${var.role_name}"
     filter_tags = ["${var.filter_tags}"]
     host_tags = ["${var.host_tags}"]
-    account_specific_namespace_rules = ["${var.account_specific_namespace_rules}"]
+    account_specific_namespace_rules = "${var.account_specific_namespace_rules}"
 }

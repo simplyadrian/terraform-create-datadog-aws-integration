@@ -21,7 +21,7 @@ variable "host_tags" {
 }
 
 variable "account_specific_namespace_rules" {
-  type = "list"
-  default = []
-  description = "(Optional) Enables or disables metric collection for specific AWS namespaces for this AWS account only"
+  type = "map"
+  default = {}
+  description = "(Optional) Enables or disables metric collection for specific AWS namespaces for this AWS account onlyi (e.g. `{ auto_scaling = false }`"
 }
